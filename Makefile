@@ -44,6 +44,7 @@ COMMON_ARGS += --build-arg=SOURCE_DATE_EPOCH=$(SOURCE_DATE_EPOCH)
 COMMON_ARGS += --build-arg=PKGS_PREFIX="$(PKGS_PREFIX)"
 COMMON_ARGS += --build-arg=PKG_KERNEL="$(PKG_KERNEL)"
 COMMON_ARGS += --build-arg=PKGS="$(PKGS)"
+COMMON_ARGS += --build-arg=TAG="$(TAG)"
 
 # extra variables
 
@@ -53,7 +54,7 @@ PKG_KERNEL ?= $(PKGS_PREFIX)/kernel:$(PKGS)
 
 # targets defines all the available targets
 
-TARGETS = sbc-rockchip
+TARGETS = sbc-rockchip-tpm
 
 # help menu
 
